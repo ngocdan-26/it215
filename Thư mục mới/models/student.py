@@ -7,5 +7,5 @@ class Students(Base):
     student_code = Column(String(100),nullable=False,unique=False)
     full_name = Column(String(100),nullable=False)
     email = Column(String(100),nullable=False)
-    class_id = Column(Integer,ForeignKey("Classrooms.id"))
+    class_id = Column(Integer,ForeignKey("classrooms.id"))
     # classroom = relationship("Classrooms" ,back_populates="student")
